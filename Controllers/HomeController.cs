@@ -6,7 +6,7 @@ namespace UDEMY.Controllers
     {
         public IActionResult Index()
         {
-            return Content("sono la index della home");
+            return View();
         }
     }
 }

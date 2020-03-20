@@ -6,11 +6,11 @@ namespace UDEMY.Controllers
     {
         public IActionResult Index()
         {
-            return Content("sono index");
+            return View();
         }
         public IActionResult Detail(string id)
         {
-            return Content($"sono detail, ho ricevuto l'id {id}");
+            return View();
         }
     }
 }
