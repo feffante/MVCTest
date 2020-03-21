@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using Westwind.AspNetCore.LiveReload; 
+
 namespace UDEMY
 {
     public class Startup
@@ -20,6 +22,7 @@ namespace UDEMY
             services.AddMvc();
             services.AddMvc(option => option.EnableEndpointRouting = false);
              //MvcOptions.EnableEndpointRouting = false
+ 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
