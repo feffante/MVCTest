@@ -1,2 +1,26 @@
-<h1>sono la view per laction index del coursecontroller</h1> 
-
+<h1>Catalogo dei corsi</h1>
+@for(int i = 1;i<=10;i++)
+{
+<div class="row">
+    <div class="col-md-1">
+      <img src="~/logo.png" width="40">
+    </div>
+    <div class="col-md-5">
+        <h2>titolo del corso</h2>
+        <author>di Nome Autore</author>  
+    </div>
+      <div class="col-md-2">
+        <i class="fas fa-star"></i>          
+        <i class="fas fa-star"></i>          
+        <i class="fas fa-star"></i>          
+        <i class="fas fa-star"></i>          
+        <i class="fas fa-star"></i>                    
+      </div>
+      <div class="col-md-2">
+          EUR 10,99<br/><s>EUR 12,99</s>
+      </div>
+       <div class="col-md-2">
+           <a class="btn btn-outline-primary" asp-action="Detail" asp-controller="Courses" asp-route-id="6">Dettaglio corso</a>
+       </div>
+</div>
+}
