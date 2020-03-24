@@ -1,3 +1,5 @@
+using UDEMY.Models.ValueTypes;
+
 namespace UDEMY.Models.ViewModels
 {
     public class CourseViewModel
