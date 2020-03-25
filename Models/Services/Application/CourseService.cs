@@ -7,7 +7,7 @@ using UDEMY.Models.ValueTypes;
 
 namespace UDEMY.Models.Services.Application
 {
-    public class CourseService
+    public class CourseService : ICourseService
     {
         public List<CourseViewModel> GetCourses()
         {

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using UDEMY.Models.Services.Application;
 using Westwind.AspNetCore.LiveReload; 
 
 namespace UDEMY
@@ -20,6 +20,7 @@ namespace UDEMY
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<ICourseService, CourseService>();
             services.AddMvc(option => option.EnableEndpointRouting = false);
              //MvcOptions.EnableEndpointRouting = false
             // services.AddLiveReload();
